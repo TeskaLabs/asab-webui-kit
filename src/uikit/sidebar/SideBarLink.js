@@ -10,18 +10,18 @@ class SideBarLink extends Component {
 				<a className={linkActive ? "active" : ""} 
 					href={linkHref}
 					data-toggle="collapse"
-					data-target={"#" + linkTargetId}>
+					data-target={`#${linkTargetId}`}>
 					<div className="pull-left">
-						<i className={"zmdi " + linkIconClass + " mr-20"}></i>
+						<i className={`zmdi ${linkIconClass} mr-20`}></i>
 						<span className="right-nav-text">{linkTitle}</span>
 					</div>
 					<div className="pull-right">
 						{linkLabelClass ? (
-									<span className={"label " + linkLabelClass}>
+									<span className={`label ${linkLabelClass}`}>
 										{linkLabelTitle}
 									</span>
 								) : (
-									<i className={"zmdi " + linkLabelIcon}></i>
+									<i className={`zmdi ${linkLabelIcon}`}></i>
 								) }
 					</div>
 					<div className="clearfix"></div>

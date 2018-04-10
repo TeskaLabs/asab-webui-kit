@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import SideBarLink from './SideBarLink'
 
 class SideBarHeader extends Component {
 	render() {

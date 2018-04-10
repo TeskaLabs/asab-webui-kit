@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { initPhilbertDropdownEffectors } from '../philbert/dropdown';
+import { initPhilbertDropdownEffectors } from '../philbert/dropdown'
 
 class TopBarDropdown extends Component {
 	componentDidMount() {
@@ -13,7 +13,7 @@ class TopBarDropdown extends Component {
 			<ul className="nav navbar-right top-nav pull-right">
 				<li className={`dropdown ${dropdownClass}`}>
 					<a href="#" className="dropdown-toggle" data-toggle="dropdown">
-						<i className={"zmdi " + iconClass + " top-nav-icon"}></i>
+						<i className={`zmdi ${iconClass} top-nav-icon`}></i>
 						{
 							iconBadgeText ? (
 								<span className="top-nav-icon-badge">{iconBadgeText}</span>
