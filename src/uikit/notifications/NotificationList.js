@@ -4,25 +4,17 @@ import Notification from './Notification';
 import {createNotification} from './redux';
 
 class NotificationList extends React.Component {
-	componentDidMount() {
-		const {dispatch} = this.props;
-		///
-		dispatch(createNotification({
-			heading: "Bacha",
-			text: "nobore",
-			level: "warning",
-		}))
-		dispatch(createNotification())
-		///
-	}
+
 	render() {
-		const {notifications, dispatch} = this.props;
-		const notificationsCount = notifications.length;
+		const {notifications, dispatch, onClickNotification} = this.props;
+		const notificationsCount = notifications ? notifications.length : 0;
 		return(
 			<div className="streamline message-nicescroll-bar">
 				{notifications.map((notification, index)=>(
 					<div>
-					<Notification notification={notification}/>
+					<Notification
+						notification={notification}
+						onClick={onClickNotification}/>
 					{index+1 < notificationsCount ? (
 						<hr className="light-grey-hr ma-0"/>
 					) : null}

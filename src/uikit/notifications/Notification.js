@@ -3,6 +3,8 @@ import React from 'react';
 class Notification extends React.Component {
 	constructor(props) {
 		super(props);
+
+		// TODO: complete this map
 		this.levelToBgClassMap = {
 			'info': 'bg-blue',
 			'warning': 'bg-yellow',

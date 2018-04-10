@@ -29,8 +29,8 @@ export function notifications(state=initialState, action) {
 		case actions.CREATE_NOTIFICATION:
 			return Object.assign({}, state, {
 				notifications: [
+					Object.assign({}, action.notification, {id: 1}),
 					...state.notifications,
-					Object.assign({}, action.notification, {id: 1})
 				]
 			});
 			case actions.REMOVE_NOTIFICATION:
