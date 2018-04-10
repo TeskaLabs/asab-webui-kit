@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import logo from './logo.svg';
-import './App.css';
+// import './App.css';
 
 
 import {createNotification} from './uikit/notifications/redux';
@@ -55,7 +55,7 @@ class App extends Component {
 			<div className="App">
 				<TopBar>
 					<TopBarLeft>
-						<TopBarBrand brandTitle="ASAB" brandImgSrc={logo} brandHref="index.html" />
+						<TopBarBrand brandTitle="ASAB" brandImgSrc="media/philbert/img/logo.png" brandHref="index.html" />
 						<TopBarMenuButton />
 					</TopBarLeft>
 					<TopBarRight>
