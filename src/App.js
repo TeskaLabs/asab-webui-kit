@@ -11,7 +11,7 @@ import {
   TopBarRight,
   TopBarBrand,
 
-  TopBarMenuButton,
+  TopBarLeftSidebarButton,
   TopBarAlertDropdown,
 } from './uikit/topbar';
 import {
@@ -56,7 +56,7 @@ class App extends Component {
 				<TopBar>
 					<TopBarLeft>
 						<TopBarBrand brandTitle="ASAB" brandImgSrc="media/philbert/img/logo.png" brandHref="index.html" />
-						<TopBarMenuButton />
+						<TopBarLeftSidebarButton />
 					</TopBarLeft>
 					<TopBarRight>
 					<TopBarAlertDropdown

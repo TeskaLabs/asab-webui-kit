@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class TopBarMenuButton extends Component {
+class TopBarLeftSidebarButton extends Component {
 	render() {
 		return (
 			<a id="toggle_nav_btn" className="toggle-left-nav-btn inline-block ml-20 pull-left" href="javascript:void(0);">
@@ -10,4 +10,4 @@ class TopBarMenuButton extends Component {
 	}
 }
 
-export default TopBarMenuButton;
+export default TopBarLeftSidebarButton;
