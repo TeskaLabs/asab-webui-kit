@@ -4,6 +4,7 @@ import TopBarRight from './TopBarRight';
 import TopBarBrand from './TopBarBrand';
 import TopBarLeftSidebarButton from './TopBarLeftSidebarButton';
 import TopBarAlertDropdown from './TopBarAlertDropdown';
+import TopBarMegaMenuButton from './TopBarMegaMenuButton';
 
 export {
 	TopBar,
@@ -12,4 +13,5 @@ export {
 	TopBarBrand,
 	TopBarLeftSidebarButton,
 	TopBarAlertDropdown,
+	TopBarMegaMenuButton,
 }

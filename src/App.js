@@ -13,6 +13,7 @@ import {
 
   TopBarLeftSidebarButton,
   TopBarAlertDropdown,
+  TopBarMegaMenuButton,
 } from './uikit/topbar';
 import {
 	SideBar,
@@ -65,6 +66,7 @@ class App extends Component {
 							<NotificationList />
 						</li>
 					</TopBarAlertDropdown>
+					<TopBarMegaMenuButton />
 					</TopBarRight>
 				</TopBar>
 
