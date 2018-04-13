@@ -6,7 +6,7 @@ class TopBarAppDropdownButton extends Component {
 		return (
 			<TopBarDropdown
 				iconClass="zmdi-apps"
-				dropdownClass="app-drp open"
+				dropdownClass="app-drp"
 				menuClass="app-dropdown"
 				effectIn="slideInRight"
 				effectOut="flipOutX">
