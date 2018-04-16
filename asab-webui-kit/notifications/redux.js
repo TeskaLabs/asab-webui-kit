@@ -24,7 +24,7 @@ const initialState = {
   notifications: [],
 }
 
-export function notifications(state=initialState, action) {
+export function reducer(state=initialState, action) {
 	switch(action.type) {
 		case actions.CREATE_NOTIFICATION:
 			return Object.assign({}, state, {
