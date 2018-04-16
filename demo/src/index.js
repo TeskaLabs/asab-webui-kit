@@ -4,12 +4,14 @@ import { Provider } from 'react-redux';
 import { createStore, combineReducers } from 'redux';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
-import { notifications } from './uikit/notifications/redux' ;
+import {
+	notificationsRedux
+} from 'asab-webui-kit' ;
 
 
 const store = createStore(
 	combineReducers({
-		notifications
+		notifications: notificationsRedux.reducer
 	}),
 );
 

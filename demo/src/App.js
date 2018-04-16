@@ -3,8 +3,6 @@ import { connect } from 'react-redux';
 import logo from './logo.svg';
 // import './App.css';
 
-
-import {createNotification} from './uikit/notifications/redux';
 import {
   TopBar,
   TopBarLeft,
@@ -15,17 +13,18 @@ import {
   TopBarAlertDropdown,
   TopBarMegaMenuButton,
   TopBarAppDropdownButton,
-} from './uikit/topbar';
-import {
+
 	SideBar,
   SideBarList,
   SideBarItemLink,
   SideBarLink,
   SideBarHeader,
-} from './uikit/sidebar';
-import NotificationList from './uikit/notifications/NotificationList';
 
+  NotificationList,
+  notificationsRedux
+} from 'asab-webui-kit';
 
+const createNotification = notificationsRedux.createNotification;
 
 class App extends Component {
 
