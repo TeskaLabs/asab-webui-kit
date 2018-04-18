@@ -55,6 +55,7 @@ module.exports = {
   servedPath: getServedPath(resolveApp('package.json')),
 
   // Library
+  libBuild: resolveApp('build/asab-webui-kit'),
   libIndexJs: resolveApp('asab-webui-kit/index.js'),
   libSrc: resolveApp('asab-webui-kit'),
 };
