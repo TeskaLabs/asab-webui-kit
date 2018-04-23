@@ -64,4 +64,4 @@ This will start the Node development server and you will see changes instantly i
 
 ### Adding Requirements
 
-Webpack, the module bundler, is configured the way that dependencies installed with the `--save` flag are not included in the final build. Use this approach whenever you add a dependency, unless there is a strong reason behind using flag `--save-dev`
+Webpack, the module bundler, is configured to not include packages from `node_modules` in the build bundle. When installing dependencies use `npm install` with the `--save` flag so that library can be used in React projects.
