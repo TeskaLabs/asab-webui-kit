@@ -47,7 +47,26 @@ class App extends Component {
 				level: "warning",
 				avatarSrc: "/media/philbert/img/user1.png",
 			}))
-		}, 3000)
+		}, 3000);
+
+		this.websocket = new WebSocket(((window.location.protocol === "https:") ? "wss://" : "ws://") + window.location.host + "/api/ws");
+		this.websocket.onmessage = function (e) {
+			window.$.toast({
+				heading: "This is pushed from ASAB",
+				text: e.data,
+				position: 'top-right',
+				loaderBg:'#f0c541',
+				icon: 'success',
+				hideAfter: 3500,
+				stack: 6
+			});
+			console.log(e);
+		};
+
+		this.websocket.onopen = function () {
+			this.send("Hi, from the client.");
+		};
+
 	}
 
 	render() {
