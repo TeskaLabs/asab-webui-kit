@@ -20,6 +20,21 @@ import {
 	NotificationList,
 	redux as notificationsRedux,
 } from './notifications';
+import {
+    PageWrapper,
+    Container,
+    HeadingRow,
+	Title,
+	Breadcrumb,
+	BreadcrumbItem,
+	Row,
+	Panel,
+	PanelHeading,
+	PanelWithLabel,
+	PanelLeftHeading,
+	PanelRightHeading,
+	PanelBody,
+} from './panelwells';
 
 
 export {
@@ -37,7 +52,21 @@ export {
 	SideBarItemLink,
 	SideBarLink,
 	SideBarHeader,
-
+	
+	PageWrapper,
+    Container,
+    HeadingRow,
+    Title,
+    Breadcrumb,
+	BreadcrumbItem,
+	Row,
+	Panel,
+	PanelWithLabel,
+	PanelHeading,
+	PanelRightHeading,
+	PanelLeftHeading,
+	PanelBody,
+	
 	Notification,
 	NotificationList,
 	notificationsRedux,

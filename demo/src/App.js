@@ -20,9 +20,25 @@ import {
   SideBarLink,
   SideBarHeader,
 
+  PageWrapper,
+  Container,
+  HeadingRow,
+  Title,
+  Breadcrumb,
+  BreadcrumbItem,
+  Row,
+  Panel,
+  PanelHeading,
+  PanelRightHeading,
+  PanelLeftHeading,
+  PanelBody,
+
+
+
   NotificationList,
   notificationsRedux
 } from 'asab-webui-kit';
+
 
 const createNotification = notificationsRedux.createNotification;
 
@@ -114,6 +130,42 @@ class App extends Component {
 											linkLabelClass="label-warning"
 											linkLabelTitle="9" />
 				</SideBar>
+				<PageWrapper >
+
+					<Container>
+  						<HeadingRow>
+  							<Title headerTitle="Nadpis" />
+							<Breadcrumb>
+								<BreadcrumbItem linkHref="index.js" linkTitle="Dashboard" linkActive={false} />
+								<BreadcrumbItem linkHref="index.js" linkTitle="UI Elements" linkActive={false} />
+								<BreadcrumbItem linkHref="index.js" linkTitle="Dashboard" linkActive={true} />
+							</Breadcrumb>
+						</HeadingRow>		
+						<Row>
+							<Panel>
+								<PanelHeading>
+									<PanelLeftHeading PanelTitle="Lorem"/>
+								</PanelHeading>
+								<PanelBody PanelText="psum Lorem Ipsum Lorem Ipsum Lorem Ipsum "/>
+							</Panel>
+							<Panel>
+								<PanelHeading>
+									<PanelLeftHeading PanelTitle="Lorem"/>
+									<PanelRightHeading PanelTitle="Lorem"/>									
+								</PanelHeading>
+								<PanelBody PanelText="psum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum "/>
+							</Panel>
+							<Panel>
+								<PanelLeftHeading  PanelTitle="Lorem"  />
+								<PanelBody PanelText=" Lorem Ipsum Lorem Ipsum "/>
+							</Panel>
+						</Row>	
+									
+					</Container>
+				</PageWrapper>
+
+
+
 			</div>
 		);
 	}
