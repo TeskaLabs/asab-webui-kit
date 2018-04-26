@@ -32,7 +32,14 @@ import {
   PanelRightHeading,
   PanelLeftHeading,
   PanelBody,
-
+  PanelInfo,
+  PanelWarning,
+  PanelDanger,
+  PanelSuccess,
+  PanelPrimary,
+  PanelInverse,
+  ColoredPanelLeftHeading,
+  PanelWithBorder,
 
 
   NotificationList,
@@ -144,22 +151,68 @@ class App extends Component {
 						<Row>
 							<Panel>
 								<PanelHeading>
-									<PanelLeftHeading PanelTitle="Lorem"/>
+									<PanelLeftHeading PanelTitle="Default Panel"/>
 								</PanelHeading>
-								<PanelBody PanelText="psum Lorem Ipsum Lorem Ipsum Lorem Ipsum "/>
+								<PanelBody PanelText="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue."/>
 							</Panel>
 							<Panel>
 								<PanelHeading>
-									<PanelLeftHeading PanelTitle="Lorem"/>
-									<PanelRightHeading PanelTitle="Lorem"/>									
+									<PanelLeftHeading PanelTitle="Panel with label"/>
+									<PanelRightHeading Label="Lorem"/>									
 								</PanelHeading>
-								<PanelBody PanelText="psum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum "/>
+								<PanelBody PanelText="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue."/>
 							</Panel>
-							<Panel>
-								<PanelLeftHeading  PanelTitle="Lorem"  />
-								<PanelBody PanelText=" Lorem Ipsum Lorem Ipsum "/>
-							</Panel>
-						</Row>	
+							<PanelWithBorder>
+								<PanelHeading>
+									<PanelLeftHeading  PanelTitle="Panel With Border"  />
+								</PanelHeading>
+								<PanelBody PanelText=" Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue."/>
+
+							</PanelWithBorder>
+						</Row>
+						<Row>
+							<PanelInfo>
+								<PanelHeading>
+									<ColoredPanelLeftHeading PanelTitle="Panel Info"/>
+								</PanelHeading>
+								<PanelBody PanelText="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue."/>
+							</PanelInfo>
+							<PanelWarning>
+								<PanelHeading>
+									<ColoredPanelLeftHeading PanelTitle="Panel Warning"/>
+								</PanelHeading>
+								<PanelBody PanelText="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue."/>
+							</PanelWarning>
+							<PanelDanger>
+								<PanelHeading>
+									<ColoredPanelLeftHeading PanelTitle="Panel Danger"/>
+								</PanelHeading>
+								<PanelBody PanelText="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue."/>
+							</PanelDanger>
+
+						</Row>
+						<Row>
+							<PanelSuccess>
+								<PanelHeading>
+									<ColoredPanelLeftHeading PanelTitle="Panel Success"/>
+								</PanelHeading>
+								<PanelBody PanelText="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue."/>
+							</PanelSuccess>
+							<PanelPrimary>
+								<PanelHeading>
+									<ColoredPanelLeftHeading PanelTitle="Panel Primary"/>
+								</PanelHeading>
+								<PanelBody PanelText="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue."/>
+							</PanelPrimary>
+							<PanelInverse>
+								<PanelHeading>
+									<PanelLeftHeading PanelTitle="Panel Inverse"/>
+								</PanelHeading>
+								<PanelBody PanelText="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue."/>
+							</PanelInverse>
+
+						</Row>
+						
 									
 					</Container>
 				</PageWrapper>
