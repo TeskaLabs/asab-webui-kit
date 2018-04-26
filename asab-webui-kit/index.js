@@ -34,6 +34,15 @@ import {
 	PanelLeftHeading,
 	PanelRightHeading,
 	PanelBody,
+    PanelInfo,
+    PanelWarning,
+    PanelDanger,
+    PanelSuccess,
+    PanelPrimary,
+    PanelInverse,
+	ColoredPanelLeftHeading,
+	PanelWithBorder,
+
 } from './panelwells';
 
 
@@ -66,6 +75,14 @@ export {
 	PanelRightHeading,
 	PanelLeftHeading,
 	PanelBody,
+	PanelInfo,
+	PanelWarning,
+	PanelDanger,
+	PanelSuccess,
+    PanelPrimary,
+    PanelInverse,
+	ColoredPanelLeftHeading,
+	PanelWithBorder,
 	
 	Notification,
 	NotificationList,
