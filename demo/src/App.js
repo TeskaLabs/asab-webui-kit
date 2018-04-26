@@ -4,46 +4,47 @@ import logo from './logo.svg';
 // import './App.css';
 
 import {
-  TopBar,
-  TopBarLeft,
-  TopBarRight,
-  TopBarBrand,
+	TopBar,
+	TopBarLeft,
+	TopBarRight,
+	TopBarBrand,
 
-  TopBarLeftSidebarButton,
-  TopBarAlertDropdown,
-  TopBarMegaMenuButton,
-  TopBarAppDropdownButton,
+	TopBarLeftSidebarButton,
+	TopBarAlertDropdown,
+	TopBarMegaMenuButton,
+	TopBarAppDropdownButton,
 
 	SideBar,
-  SideBarList,
-  SideBarItemLink,
-  SideBarLink,
-  SideBarHeader,
+	SideBarList,
+	SideBarItemLink,
+	SideBarLink,
+	SideBarHeader,
 
-  PageWrapper,
-  Container,
-  HeadingRow,
-  Title,
-  Breadcrumb,
-  BreadcrumbItem,
-  Row,
-  Panel,
-  PanelHeading,
-  PanelRightHeading,
-  PanelLeftHeading,
-  PanelBody,
-  PanelInfo,
-  PanelWarning,
-  PanelDanger,
-  PanelSuccess,
-  PanelPrimary,
-  PanelInverse,
-  ColoredPanelLeftHeading,
-  PanelWithBorder,
+	PageWrapper,
+	Container,
+	HeadingRow,
+	Title,
+	Breadcrumb,
+	BreadcrumbItem,
+	Row,
+	Col,
+	Panel,
+	PanelHeading,
+	PanelRightHeading,
+	PanelLeftHeading,
+	PanelBody,
+	PanelInfo,
+	PanelWarning,
+	PanelDanger,
+	PanelSuccess,
+	PanelPrimary,
+	PanelInverse,
+	ColoredPanelLeftHeading,
+	PanelWithBorder,
 
 
-  NotificationList,
-  notificationsRedux
+	NotificationList,
+	notificationsRedux
 } from 'asab-webui-kit';
 
 
@@ -140,14 +141,25 @@ class App extends Component {
 				<PageWrapper >
 
 					<Container>
-  						<HeadingRow>
-  							<Title headerTitle="Nadpis" />
+							<HeadingRow>
+								<Title headerTitle="Nadpis" />
 							<Breadcrumb>
 								<BreadcrumbItem linkHref="index.js" linkTitle="Dashboard" linkActive={false} />
 								<BreadcrumbItem linkHref="index.js" linkTitle="UI Elements" linkActive={false} />
 								<BreadcrumbItem linkHref="index.js" linkTitle="Dashboard" linkActive={true} />
 							</Breadcrumb>
-						</HeadingRow>		
+						</HeadingRow>
+						<Row>
+							<Col sm="4" className="TEST">
+								Column 1
+							</Col>
+							<Col sm="4">
+								Column 2
+							</Col>
+							<Col sm="4">
+								Column 3
+							</Col>
+						</Row>
 						<Row>
 							<Panel>
 								<PanelHeading>
@@ -158,7 +170,7 @@ class App extends Component {
 							<Panel>
 								<PanelHeading>
 									<PanelLeftHeading PanelTitle="Panel with label"/>
-									<PanelRightHeading Label="Lorem"/>									
+									<PanelRightHeading Label="Lorem"/>
 								</PanelHeading>
 								<PanelBody PanelText="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue."/>
 							</Panel>
@@ -212,8 +224,8 @@ class App extends Component {
 							</PanelInverse>
 
 						</Row>
-						
-									
+
+
 					</Container>
 				</PageWrapper>
 

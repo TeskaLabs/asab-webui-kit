@@ -1,4 +1,11 @@
 import {
+	Container,
+	ContainerFluid,
+	Row,
+	Col
+} from './bootstrap'
+
+import {
 	TopBar,
 	TopBarLeft,
 	TopBarRight,
@@ -22,12 +29,10 @@ import {
 } from './notifications';
 import {
     PageWrapper,
-    Container,
     HeadingRow,
 	Title,
 	Breadcrumb,
 	BreadcrumbItem,
-	Row,
 	Panel,
 	PanelHeading,
 	PanelWithLabel,
@@ -47,6 +52,11 @@ import {
 
 
 export {
+	Container,
+	ContainerFluid,
+	Row,
+	Col,
+
 	TopBar,
 	TopBarLeft,
 	TopBarRight,
@@ -61,14 +71,12 @@ export {
 	SideBarItemLink,
 	SideBarLink,
 	SideBarHeader,
-	
+
 	PageWrapper,
-    Container,
     HeadingRow,
     Title,
     Breadcrumb,
 	BreadcrumbItem,
-	Row,
 	Panel,
 	PanelWithLabel,
 	PanelHeading,
@@ -83,7 +91,7 @@ export {
     PanelInverse,
 	ColoredPanelLeftHeading,
 	PanelWithBorder,
-	
+
 	Notification,
 	NotificationList,
 	notificationsRedux,

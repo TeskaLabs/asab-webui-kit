@@ -3,11 +3,11 @@ import React, { Component } from 'react';
 
 class Row extends Component {
 	render() {
-		const { children } = this.props;
+		const { children, className } = this.props;
 		return (
-			<div className="row">
-        		{children}
-            </div>
+			<div className={`row ${className ? className : ""}`}>
+				{children}
+			</div>
 		);
 	}
 }
