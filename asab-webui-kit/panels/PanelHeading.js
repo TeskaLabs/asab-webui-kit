@@ -8,7 +8,6 @@ class PanelHeading extends Component {
 			<div className="panel-heading">
 				{children}
 				<div className="clearfix"/>
-
             </div>
 			
 		);

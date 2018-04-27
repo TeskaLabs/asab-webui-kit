@@ -22,16 +22,15 @@ import {
 
 	PageWrapper,
 	Container,
-	HeadingRow,
-	Title,
-	Breadcrumb,
-	BreadcrumbItem,
+	ContainerFluid,
 	Row,
 	Col,
+
 	Panel,
+	PanelTitle,
+	HeadingRow,
 	PanelHeading,
-	PanelRightHeading,
-	PanelLeftHeading,
+	Label,
 	PanelBody,
 	PanelInfo,
 	PanelWarning,
@@ -42,6 +41,12 @@ import {
 	ColoredPanelLeftHeading,
 	PanelWithBorder,
 
+	Breadcrumb,
+	BreadcrumbItem,
+	Title,
+
+	Left,
+	Right,
 
 	NotificationList,
 	notificationsRedux
@@ -139,10 +144,9 @@ class App extends Component {
 											linkLabelTitle="9" />
 				</SideBar>
 				<PageWrapper >
-
-					<Container>
+					<ContainerFluid>
 							<HeadingRow>
-								<Title headerTitle="Nadpis" />
+								<Title className="col-lg-3 col-md-4 col-sm-4 col-xs-12">Panel-Wells</Title>
 							<Breadcrumb>
 								<BreadcrumbItem linkHref="index.js" linkTitle="Dashboard" linkActive={false} />
 								<BreadcrumbItem linkHref="index.js" linkTitle="UI Elements" linkActive={false} />
@@ -161,72 +165,127 @@ class App extends Component {
 							</Col>
 						</Row>
 						<Row>
-							<Panel>
+							<Panel className ='card-view panel-default col-lg-4 col-md-4 col-sm-4 col-xs-12'>
 								<PanelHeading>
-									<PanelLeftHeading PanelTitle="Default Panel"/>
+									<Left>
+										<PanelTitle>Default Panel</PanelTitle>
+									</Left>
 								</PanelHeading>
-								<PanelBody PanelText="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue."/>
+
+								<PanelBody>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue.
+								</PanelBody>
 							</Panel>
-							<Panel>
+
+
+
+
+
+
+							
+							<Panel className ='card-view  panel-default col-lg-4 col-md-4 col-sm-4 col-xs-12'>
 								<PanelHeading>
-									<PanelLeftHeading PanelTitle="Panel with label"/>
-									<PanelRightHeading Label="Lorem"/>
+									<Left>
+										<PanelTitle>Panel with label</PanelTitle> 
+									</Left>
+									<Right>
+										<Label>Label</Label> 
+									</Right>								
 								</PanelHeading>
-								<PanelBody PanelText="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue."/>
+								<PanelBody>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue.
+								</PanelBody>							
+								</Panel>
+							<Panel className ='border-panel panel-default card-view col-lg-4 col-md-4 col-sm-4 col-xs-12'>
+								<PanelHeading>
+									<Left>
+										<PanelTitle>Panel With Border</PanelTitle> 
+									</Left>								
+								</PanelHeading>
+								<PanelBody>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue.
+								</PanelBody>
+
 							</Panel>
-							<PanelWithBorder>
-								<PanelHeading>
-									<PanelLeftHeading  PanelTitle="Panel With Border"  />
-								</PanelHeading>
-								<PanelBody PanelText=" Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue."/>
-
-							</PanelWithBorder>
 						</Row>
+
+
+
+
+
+
 						<Row>
-							<PanelInfo>
+							<Panel className="panel-info card-view col-lg-4 col-md-4 col-sm-4 col-xs-12">
 								<PanelHeading>
-									<ColoredPanelLeftHeading PanelTitle="Panel Info"/>
+									<Left>
+										<PanelTitle className="txt-light">Info Panel</PanelTitle> 
+									</Left>								
 								</PanelHeading>
-								<PanelBody PanelText="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue."/>
-							</PanelInfo>
-							<PanelWarning>
+								<PanelBody>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue.
+								</PanelBody>
+							</Panel>
+							<Panel className ='panel-warning card-view col-lg-4 col-md-4 col-sm-4 col-xs-12'>
 								<PanelHeading>
-									<ColoredPanelLeftHeading PanelTitle="Panel Warning"/>
+									<Left>
+										<PanelTitle className="txt-light">Warning Panel</PanelTitle> 
+									</Left>								
 								</PanelHeading>
-								<PanelBody PanelText="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue."/>
-							</PanelWarning>
-							<PanelDanger>
+								<PanelBody>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue.
+								</PanelBody>
+							</Panel>
+							<Panel className ='panel-danger card-view col-lg-4 col-md-4 col-sm-4 col-xs-12'>
 								<PanelHeading>
-									<ColoredPanelLeftHeading PanelTitle="Panel Danger"/>
+									<Left>
+										<PanelTitle className="txt-light">Danger Panel</PanelTitle> 
+									</Left>								
 								</PanelHeading>
-								<PanelBody PanelText="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue."/>
-							</PanelDanger>
+								<PanelBody>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue.
+								</PanelBody>
+							</Panel>
 
 						</Row>
+
+
+
+
 						<Row>
-							<PanelSuccess>
-								<PanelHeading>
-									<ColoredPanelLeftHeading PanelTitle="Panel Success"/>
+							<Panel className ='panel-success card-view col-lg-4 col-md-4 col-sm-4 col-xs-12'>
+							<PanelHeading>
+									<Left>
+										<PanelTitle className="txt-light">Panel Success</PanelTitle> 
+									</Left>								
 								</PanelHeading>
-								<PanelBody PanelText="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue."/>
-							</PanelSuccess>
-							<PanelPrimary>
+
+								<PanelBody>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue.
+								</PanelBody>
+							</Panel>
+							<Panel className ='panel-primary card-view col-lg-4 col-md-4 col-sm-4 col-xs-12'>
 								<PanelHeading>
-									<ColoredPanelLeftHeading PanelTitle="Panel Primary"/>
+									<Left>
+										<PanelTitle className="txt-light">Primary Panel</PanelTitle> 
+									</Left>								
 								</PanelHeading>
-								<PanelBody PanelText="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue."/>
-							</PanelPrimary>
-							<PanelInverse>
+								<PanelBody>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue.
+								</PanelBody>
+							</Panel>
+							<Panel className ='panel-inverse card-view col-lg-4 col-md-4 col-sm-4 col-xs-12'>
 								<PanelHeading>
-									<PanelLeftHeading PanelTitle="Panel Inverse"/>
+									<Left>
+										<PanelTitle>Inverse Panel</PanelTitle> 
+									</Left>								
 								</PanelHeading>
-								<PanelBody PanelText="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue."/>
-							</PanelInverse>
+								<PanelBody>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue.
+								</PanelBody>
+							</Panel>
 
 						</Row>
 
-
-					</Container>
+					</ContainerFluid>
 				</PageWrapper>
 
 

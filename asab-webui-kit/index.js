@@ -1,9 +1,21 @@
 import {
+	Left,
+	Right,
+} from './commons'
+
+import {
 	Container,
 	ContainerFluid,
 	Row,
 	Col
 } from './bootstrap'
+
+import {
+    Breadcrumb,
+	BreadcrumbItem,
+	Title,
+	
+} from './header'
 
 import {
 	TopBar,
@@ -30,14 +42,10 @@ import {
 import {
     PageWrapper,
     HeadingRow,
-	Title,
-	Breadcrumb,
-	BreadcrumbItem,
 	Panel,
+	PanelTitle,
 	PanelHeading,
-	PanelWithLabel,
-	PanelLeftHeading,
-	PanelRightHeading,
+	Label,
 	PanelBody,
     PanelInfo,
     PanelWarning,
@@ -48,7 +56,7 @@ import {
 	ColoredPanelLeftHeading,
 	PanelWithBorder,
 
-} from './panelwells';
+} from './panels';
 
 
 export {
@@ -75,13 +83,10 @@ export {
 	PageWrapper,
     HeadingRow,
     Title,
-    Breadcrumb,
-	BreadcrumbItem,
 	Panel,
-	PanelWithLabel,
+	PanelTitle,
 	PanelHeading,
-	PanelRightHeading,
-	PanelLeftHeading,
+	Label,
 	PanelBody,
 	PanelInfo,
 	PanelWarning,
@@ -95,4 +100,10 @@ export {
 	Notification,
 	NotificationList,
 	notificationsRedux,
+	
+	Breadcrumb,
+	BreadcrumbItem,
+	
+	Left,
+	Right,
 }
