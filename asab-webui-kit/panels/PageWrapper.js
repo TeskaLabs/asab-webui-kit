@@ -5,9 +5,10 @@ class PageWrapper extends Component {
 		window.setHeightWidth();
 			}
 	render() {
+		const { children, className } = this.props;
 		return (
-			<div className="page-wrapper">
-				{this.props.children}
+			<div className={`page-wrapper ${className ? className : ""}`}>
+				{children}
 			</div>
 		);
 	}

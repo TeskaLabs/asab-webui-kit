@@ -3,12 +3,12 @@ import React, { Component } from 'react';
 
 class PanelHeading extends Component {
 	render() {
-		const { children } = this.props;
+		const { children, className } = this.props;
 		return (
-			<div className="panel-heading">
+			<div className={`panel-heading ${className ? className : ""}`}>
 				{children}
 				<div className="clearfix"/>
-            </div>
+			</div>
 			
 		);
 	}
