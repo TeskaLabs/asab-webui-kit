@@ -5,7 +5,7 @@ class Panel extends Component {
 		const { children, className } = this.props;
 		return (
 			<div className={`panel ${className ? className : ""}`}>
-                {children}
+				{children}
 			</div>
 		);
 	}

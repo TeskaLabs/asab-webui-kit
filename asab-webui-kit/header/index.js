@@ -4,9 +4,9 @@ import Title from './Title';
 
 
 export {
-    
-    Breadcrumb,
-    BreadcrumbItem,
-    Title,
+	
+	Breadcrumb,
+	BreadcrumbItem,
+	Title,
 
 };
