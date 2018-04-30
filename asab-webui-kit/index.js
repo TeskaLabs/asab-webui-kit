@@ -47,15 +47,6 @@ import {
 	PanelHeading,
 	Label,
 	PanelBody,
-    PanelInfo,
-    PanelWarning,
-    PanelDanger,
-    PanelSuccess,
-    PanelPrimary,
-    PanelInverse,
-	ColoredPanelLeftHeading,
-	PanelWithBorder,
-
 } from './panels';
 
 
@@ -88,14 +79,6 @@ export {
 	PanelHeading,
 	Label,
 	PanelBody,
-	PanelInfo,
-	PanelWarning,
-	PanelDanger,
-	PanelSuccess,
-    PanelPrimary,
-    PanelInverse,
-	ColoredPanelLeftHeading,
-	PanelWithBorder,
 
 	Notification,
 	NotificationList,
