@@ -96,7 +96,7 @@ class App extends Component {
 			<div className="App">
 				<TopBar>
 					<TopBarLeft>
-						<TopBarBrand brandTitle="ASAB" brandImgSrc="media/philbert/img/logo.png" brandHref="index.html" />
+						<TopBarBrand brandTitle="ASAB" brandImgSrc="media/teskalabs/img/logos/logo_72.png" brandHref="index.html" />
 						<TopBarLeftSidebarButton />
 					</TopBarLeft>
 					<TopBarRight>
@@ -162,7 +162,7 @@ class App extends Component {
 						</Row>
 						<Row>
 							<Col sm="4">
-								<Panel className ='card-view panel-default '>
+								<Panel className='card-view panel-default'>
 									<PanelHeading>
 										<Left>
 											<PanelTitle>Default Panel</PanelTitle>
@@ -177,37 +177,37 @@ class App extends Component {
 								<Panel className ='card-view  panel-default'>
 									<PanelHeading>
 										<Left>
-											<PanelTitle>Panel with label</PanelTitle> 
+											<PanelTitle>Panel with label</PanelTitle>
 										</Left>
 										<Right>
-											<Label>Label</Label> 
-										</Right>								
+											<Label className="test">Label</Label>
+										</Right>
 									</PanelHeading>
 									<PanelBody>
 										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue.</p>
-									</PanelBody>							
+									</PanelBody>
 								</Panel>
 							</Col>
 							<Col sm="4">
 								<Panel className ='border-panel panel-default card-view'>
 									<PanelHeading>
 										<Left>
-											<PanelTitle>Panel With Border</PanelTitle> 
-										</Left>								
+											<PanelTitle>Panel With Border</PanelTitle>
+										</Left>
 									</PanelHeading>
 									<PanelBody>
 										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue.</p>
 									</PanelBody>
 								</Panel>
-							</Col>	
+							</Col>
 						</Row>
 						<Row>
 							<Col sm="4">
 								<Panel className="panel-info card-view ">
 									<PanelHeading>
 										<Left>
-											<PanelTitle className="txt-light">Info Panel</PanelTitle> 
-										</Left>								
+											<PanelTitle className="txt-light">Info Panel</PanelTitle>
+										</Left>
 									</PanelHeading>
 									<PanelBody>
 										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue.
@@ -218,8 +218,8 @@ class App extends Component {
 								<Panel className ='panel-warning card-view '>
 									<PanelHeading>
 										<Left>
-											<PanelTitle className="txt-light">Warning Panel</PanelTitle> 
-										</Left>								
+											<PanelTitle className="txt-light">Warning Panel</PanelTitle>
+										</Left>
 									</PanelHeading>
 									<PanelBody>
 										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue.
@@ -230,8 +230,8 @@ class App extends Component {
 								<Panel className ='panel-danger card-view '>
 									<PanelHeading>
 										<Left>
-											<PanelTitle className="txt-light">Danger Panel</PanelTitle> 
-										</Left>								
+											<PanelTitle className="txt-light">Danger Panel</PanelTitle>
+										</Left>
 									</PanelHeading>
 									<PanelBody>
 										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue.
@@ -244,32 +244,32 @@ class App extends Component {
 								<Panel className ='panel-success card-view'>
 								<PanelHeading>
 										<Left>
-											<PanelTitle className="txt-light">Panel Success</PanelTitle> 
-										</Left>								
+											<PanelTitle className="txt-light">Panel Success</PanelTitle>
+										</Left>
 									</PanelHeading>
 									<PanelBody>
 										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue.
 									</PanelBody>
 								</Panel>
 							</Col>
-							<Col sm="4">								
+							<Col sm="4">
 								<Panel className ='panel-primary card-view '>
 									<PanelHeading>
 										<Left>
-											<PanelTitle className="txt-light">Primary Panel</PanelTitle> 
-										</Left>								
+											<PanelTitle className="txt-light">Primary Panel</PanelTitle>
+										</Left>
 									</PanelHeading>
 									<PanelBody>
 										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue.
 									</PanelBody>
-								</Panel>		
+								</Panel>
 							</Col>
-							<Col sm="4">									
+							<Col sm="4">
 								<Panel className ='panel-inverse card-view '>
 									<PanelHeading>
 										<Left>
-											<PanelTitle>Inverse Panel</PanelTitle> 
-										</Left>								
+											<PanelTitle>Inverse Panel</PanelTitle>
+										</Left>
 									</PanelHeading>
 									<PanelBody>
 										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue.
@@ -279,9 +279,6 @@ class App extends Component {
 						</Row>
 					</ContainerFluid>
 				</PageWrapper>
-
-
-
 			</div>
 		);
 	}
