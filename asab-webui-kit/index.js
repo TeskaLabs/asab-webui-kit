@@ -48,6 +48,9 @@ import {
 	Label,
 	PanelBody,
 } from './panels';
+import {
+	FooterContainer,
+} from './philbert'
 
 
 export {
@@ -89,4 +92,6 @@ export {
 	
 	Left,
 	Right,
+
+	FooterContainer
 }

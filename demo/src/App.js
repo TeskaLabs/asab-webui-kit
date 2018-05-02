@@ -41,7 +41,9 @@ import {
 	Right,
 
 	NotificationList,
-	notificationsRedux
+	notificationsRedux,
+
+	FooterContainer,
 } from 'asab-webui-kit';
 
 
@@ -278,6 +280,13 @@ class App extends Component {
 							</Col>
 						</Row>
 					</ContainerFluid>
+					<FooterContainer>
+						<Row>
+							<Col>
+								<p>2018 © TeskaLabs WebUI Kit. Powered by Philbert</p>
+							</Col>
+						</Row>
+					</FooterContainer>
 				</PageWrapper>
 			</div>
 		);
