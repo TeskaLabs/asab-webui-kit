@@ -7,7 +7,7 @@ ASAB WebUI Kit is a library of React components, Redux artifacts and utilities a
 
 ### Prerequisities
 
-Install dependencies with 
+Install dependencies with
 
 ```
 npm install
@@ -24,7 +24,7 @@ After build is done you can reference `./build/asab-webui-kit` in `NODE_PATH` to
 
 ## Build Demo App
 
-Demo app and any application that uses the `asab-webui-kit` is meant to be deployed with [Philbert](https://github.com/TeskaLabs/asab) distribution installed in the `public` folder. The folder structure should look like this:
+Demo app and any application that uses the `asab-webui-kit` is meant to be deployed with [Philbert](https://github.com/TeskaLabs/asab) distribution installed in the `public` folder. In `asab-webui-kit` this folder is located in `demo/public`. The folder structure should look like this:
 
 ```
 public/
