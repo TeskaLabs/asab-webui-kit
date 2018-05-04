@@ -1,21 +1,27 @@
 import {
-	Left,
-	Right,
+	
+	Breadcrumb,
+	BreadcrumbItem,
+    Left,
+    Right,
+
 } from './commons'
+
+import {
+
+    Dropdown,
+    DropdownItem,
+
+} from './dropdown'
 
 import {
 	Container,
 	ContainerFluid,
 	Row,
-	Col
-} from './bootstrap'
+	Col,
+	Label,
 
-import {
-    Breadcrumb,
-	BreadcrumbItem,
-	Title,
-	
-} from './header'
+} from './bootstrap'
 
 import {
 	TopBar,
@@ -40,16 +46,18 @@ import {
 	redux as notificationsRedux,
 } from './notifications';
 import {
-    PageWrapper,
-    HeadingRow,
 	Panel,
 	PanelTitle,
 	PanelHeading,
-	Label,
 	PanelBody,
 } from './panels';
 import {
+
 	FooterContainer,
+	PageWrapper,
+	HeadingRow,
+	HeadingTitle,
+
 } from './philbert'
 
 
@@ -76,7 +84,6 @@ export {
 
 	PageWrapper,
     HeadingRow,
-    Title,
 	Panel,
 	PanelTitle,
 	PanelHeading,
@@ -93,5 +100,9 @@ export {
 	Left,
 	Right,
 
+	Dropdown,
+	DropdownItem,
+
+	HeadingTitle,
 	FooterContainer
 }

@@ -35,13 +35,16 @@ import {
 
 	Breadcrumb,
 	BreadcrumbItem,
-	Title,
+	HeadingTitle,
 
 	Left,
 	Right,
 
 	NotificationList,
 	notificationsRedux,
+
+	Dropdown,
+	DropdownItem,
 
 	FooterContainer,
 } from 'asab-webui-kit';
@@ -98,7 +101,7 @@ class App extends Component {
 			<div className="App">
 				<TopBar>
 					<TopBarLeft>
-						<TopBarBrand brandTitle="ASAB" brandImgSrc="media/teskalabs/img/logos/logo_72.png" brandHref="index.html" />
+						<TopBarBrand brandTitle="TurboCat.Io" brandImgSrc="media/teskalabs/img/logos/logo_72.png" brandHref="index.html" />
 						<TopBarLeftSidebarButton />
 					</TopBarLeft>
 					<TopBarRight>
@@ -112,7 +115,7 @@ class App extends Component {
 					<TopBarAppDropdownButton />
 					</TopBarRight>
 				</TopBar>
-
+				{/* <Dropdown /> */}
 				<SideBar>
 					<SideBarHeader headerTitle="Component" />
 					<SideBarList listId="dashboard"
@@ -141,7 +144,7 @@ class App extends Component {
 					<ContainerFluid>
 							<HeadingRow>
 								<Col sm="4">
-									<Title>Panel-Wells</Title>
+									<HeadingTitle>Panel-Wells</HeadingTitle>
 								</Col>
 								<Col sm="8">
 									<Breadcrumb>

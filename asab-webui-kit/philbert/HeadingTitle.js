@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class Title extends Component {
+class HeadingTitle extends Component {
 	render() {
 		const { children, className } = this.props;
 		return (
@@ -9,4 +9,4 @@ class Title extends Component {
 	}
 }
 
-export default Title;
+export default HeadingTitle;
