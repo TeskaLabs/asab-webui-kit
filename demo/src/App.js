@@ -54,6 +54,14 @@ const createNotification = notificationsRedux.createNotification;
 
 class App extends Component {
 
+	constructor(props) {
+		super(props);
+		this.state = {
+			"dropdownOne": "1",
+			"dropdownTwo": "2",
+		}
+	}
+
 	componentDidMount() {
 		const {dispatch} = this.props;
 		///
@@ -280,6 +288,24 @@ class App extends Component {
 										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue.
 									</PanelBody>
 								</Panel>
+							</Col>
+						</Row>
+						<Row>
+							<Col sm="4" >
+								<Dropdown value={this.state["dropdownOne"]} onItemSelect={(value) => {this.setState({"dropdownOne" : value})}}>
+									<DropdownItem value="1" title="One" />
+									<DropdownItem value="2" title="Two" />
+									<DropdownItem value="3" title="Three" />
+									<DropdownItem value="4" title="Four" />
+								</Dropdown>
+							</Col>
+							<Col sm="4" >
+								<Dropdown value={this.state["dropdownTwo"]} onItemSelect={(value) => {this.setState({"dropdownTwo" : value})}}>
+									<DropdownItem value="1" title="One" />
+									<DropdownItem value="2" title="Two" />
+									<DropdownItem value="3" title="Three" />
+									<DropdownItem value="4" title="Four" />
+								</Dropdown>
 							</Col>
 						</Row>
 					</ContainerFluid>
