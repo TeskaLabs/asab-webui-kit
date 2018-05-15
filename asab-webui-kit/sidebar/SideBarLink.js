@@ -4,10 +4,11 @@ class SideBarLink extends Component {
 	render() {
 		const {linkHref, linkTargetId, linkTitle, linkActive,
 			linkIconClass, linkLabelClass, linkLabelTitle, linkLabelIcon,
-			children} = this.props;
+			children, className} = this.props;
+
 		return (
 			<li>
-				<a className={linkActive ? "active" : ""} 
+				<a className={(className ? className : "")+(linkActive ? " active" : "")} 
 					href={linkHref}
 					data-toggle="collapse"
 					data-target={`#${linkTargetId}`}>

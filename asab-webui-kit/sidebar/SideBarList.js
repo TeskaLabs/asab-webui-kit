@@ -4,7 +4,7 @@ import SideBarLink from './SideBarLink'
 class SideBarList extends Component {
 	render() {
 		const {listId, listTitle, listIconClass, listActive,
-			listLabelClass, listLabelTitle, children} = this.props;
+			listLabelClass, listLabelTitle, children, className, listClassName} = this.props;
 		return (
 			<SideBarLink
 				linkHref="javascript:void(0);"
@@ -14,8 +14,9 @@ class SideBarList extends Component {
 				linkIconClass={listIconClass}
 				linkLabelClass={listLabelClass}
 				linkLabelTitle={listLabelTitle}
-				linkLabelIcon={"zmdi-caret-down"}>
-				<ul id={listId} className="collapse collapse-level-1">
+				linkLabelIcon={"zmdi-caret-down"}
+				className={(className ? className : "")}>
+				<ul id={listId} className={"collapse collapse-level-1"+(listClassName ? " "+listClassName : "")}>
 					{children}
 				</ul>
 			</SideBarLink>
