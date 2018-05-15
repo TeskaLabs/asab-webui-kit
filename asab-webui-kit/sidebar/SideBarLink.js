@@ -13,7 +13,7 @@ class SideBarLink extends Component {
 					data-toggle="collapse"
 					data-target={`#${linkTargetId}`}>
 					<div className="pull-left">
-						<i className={`zmdi ${linkIconClass} mr-20`}></i>
+						<i className={`${linkIconClass} mr-20`}></i>
 						<span className="right-nav-text">{linkTitle}</span>
 					</div>
 					<div className="pull-right">
