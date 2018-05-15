@@ -8,6 +8,5 @@ export {
 	Panel,
 	PanelTitle,
 	PanelHeading,
-	Label,
 	PanelBody,
 };
