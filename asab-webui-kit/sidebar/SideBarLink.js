@@ -4,14 +4,15 @@ class SideBarLink extends Component {
 	render() {
 		const {linkHref, linkTargetId, linkTitle, linkActive,
 			linkIconClass, linkLabelClass, linkLabelTitle, linkLabelIcon,
-			children, className} = this.props;
+			children, className, ...props} = this.props;
 
 		return (
 			<li>
-				<a className={(className ? className : "")+(linkActive ? " active" : "")} 
+				<a className={(className ? className : "")+(linkActive ? " active" : "")}
 					href={linkHref}
 					data-toggle="collapse"
-					data-target={`#${linkTargetId}`}>
+					data-target={`#${linkTargetId}`}
+					{...props}>
 					<div className="pull-left">
 						<i className={`${linkIconClass} mr-20`}></i>
 						<span className="right-nav-text">{linkTitle}</span>
