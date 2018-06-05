@@ -21,7 +21,6 @@ class Dropdown extends React.Component {
 			<div className="dropdown">
 				<button className="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true">
 					{activeItem.props.title}
-					<span className="caret"></span>
 				</button>
 				<ul className="dropdown-menu">
 					{React.Children.map(this.props.children, child => (
