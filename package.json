@@ -2,6 +2,7 @@
   "name": "asab-webui-kit",
   "version": "0.1.0",
   "dependencies": {
+    "hoek": "^5.0.3",
     "react": ">=0.14",
     "react-redux": "^5.0.7"
   },
@@ -36,9 +37,8 @@
     "postcss-loader": "2.0.8",
     "promise": "8.0.1",
     "raf": "3.4.0",
-    "react-dom": "^16.3.1",
     "react-dev-utils": "^5.0.1",
-    "redux": "^3.7.2",
+    "react-dom": "^16.4.0",
     "redux": "^3.7.2",
     "resolve": "1.6.0",
     "style-loader": "0.19.0",
