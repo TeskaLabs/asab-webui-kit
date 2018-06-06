@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 
 class BreadcrumbItem extends Component {
 	render() {
-		const {linkHref, linkTitle, linkActive} = this.props;
+		const {linkHref, linkTitle, linkActive, className, ...props} = this.props;
 		return (
 			
 			linkActive ? (
-				<li className= 'active'>
+				<li {...props} className={`active ${className ? className : ""}`}>
 				<span >
 					{linkTitle}
 					</span>

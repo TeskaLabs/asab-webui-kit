@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 
 class PanelTitle extends Component {
 	render() {
-		const { children, className } = this.props;
+		const { children, className, ...props } = this.props;
 		return (
-			<h6 className={`panel-title txt-dark ${className ? className : ""}`}>{children}</h6>
+			<h6 {...props} className={`panel-title txt-dark ${className ? className : ""}`}>{children}</h6>
 		);
 	}
 }

@@ -2,10 +2,11 @@ import React, { Component } from 'react';
 
 class SideBar extends Component {
 	render() {
+		const { children, className, ...props } = this.props;
 		return (
-			<div className="fixed-sidebar-left">
+			<div {...props} className={`fixed-sidebar-left ${className ? className : ""}`}>
 				<ul className="nav navbar-nav side-nav nicescroll-bar">
-					{this.props.children}
+					{children}
 				</ul>
 			</div>
 		);

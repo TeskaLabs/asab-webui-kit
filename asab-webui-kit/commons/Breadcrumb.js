@@ -3,9 +3,9 @@ import React, { Component } from 'react';
 
 class Breadcrumb extends Component {
 	render() {
-		const { children, className } = this.props;
+		const { children, className, ...props } = this.props;
 		return (
-			<ol className={`breadcrumb ${className ? className : ""}`}>
+			<ol {...props} className={`breadcrumb ${className ? className : ""}`}>
 				{children}
 			</ol>
 		);

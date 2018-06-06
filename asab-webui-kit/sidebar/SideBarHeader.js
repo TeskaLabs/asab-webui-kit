@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 
 class SideBarHeader extends Component {
 	render() {
-		const { headerTopLine, headerTitle } = this.props;
+		const { headerTopLine, headerTitle, className, ...props } = this.props;
 		return (
-			<li className="navigation-header">
+			<li {...props} className={`navigation-header ${className ? className : ""}`}>
 				{
 					headerTopLine ? (
 						<hr className="light-grey-hr mb-10" />

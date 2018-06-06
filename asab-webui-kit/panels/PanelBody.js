@@ -3,9 +3,9 @@ import React, { Component } from 'react';
 
 class PanelBody extends Component {
 	render() {
-		const { children, className } = this.props;
+		const { children, className, ...props } = this.props;
 		return (
-			<div className={`panel-wrapper collapse in panel-body ${className ? className : ""}`}>
+			<div {...props} className={`panel-wrapper collapse in panel-body ${className ? className : ""}`}>
 				{children}
 			</div>			
 		);

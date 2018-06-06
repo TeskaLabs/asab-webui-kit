@@ -10,9 +10,9 @@ class DropdownItem extends React.Component {
 		this.props.onSelect(this);
 	}
 	render() {
-		const {title} = this.props;
+		const {title, ...props} = this.props;
 		return (
-			<li><a href="javascript:void(0)" onClick={this.onClick}>{title}</a></li>
+			<li {...props}><a href="javascript:void(0)" onClick={this.onClick}>{title}</a></li>
 		)
 	}
 }

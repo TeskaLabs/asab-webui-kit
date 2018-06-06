@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 
 class Left extends Component {
 	render() {
-	const { children, className } = this.props;
+	const { children, className, ...props } = this.props;
 		return (
-			<div className={`pull-left ${className ? className : ""}`}>
+			<div {...props} className={`pull-left ${className ? className : ""}`}>
 				{children}
 			</div>
 		);

@@ -15,15 +15,16 @@ class Dropdown extends React.Component {
 			this.props.onItemSelect(item.props.value);
 	}
 	render() {
-		const activeItem = this.props.children.filter((item) => item.props.value === this.props.value)[0];
+		const { children, className, value, ...props } = this.props;
+		const activeItem = children.filter((item) => item.props.value === value)[0];
 
 		return (
-			<div className="dropdown">
+			<div {...props} className={`dropdown ${className ? className : ""}`}>
 				<button className="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true">
 					{activeItem.props.title}
 				</button>
 				<ul className="dropdown-menu">
-					{React.Children.map(this.props.children, child => (
+					{React.Children.map(children, child => (
 						React.cloneElement(child, { onSelect: this.selectItem }
 					)))}
 				</ul>

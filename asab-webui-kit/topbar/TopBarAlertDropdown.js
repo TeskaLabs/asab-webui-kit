@@ -3,7 +3,7 @@ import TopBarDropdown from './TopBarDropdown'
 
 class TopBarAlertDropdown extends Component {
 	render() {
-		const { iconBadgeText, children } = this.props;
+		const { iconBadgeText, children, ...props } = this.props;
 		return (
 			<TopBarDropdown
 				iconClass="zmdi-notifications"
@@ -11,7 +11,8 @@ class TopBarAlertDropdown extends Component {
 				menuClass="alert-dropdown"
 				effectIn="bounceIn"
 				effectOut="bounceOut"
-				iconBadgeText={iconBadgeText}>
+				iconBadgeText={iconBadgeText}
+				{...props}>
 				{children}
 			</TopBarDropdown>
 		);

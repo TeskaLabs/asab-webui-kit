@@ -6,10 +6,11 @@ import {createNotification} from './redux';
 class NotificationList extends React.Component {
 
 	render() {
-		const {notifications, dispatch, onClickNotification} = this.props;
+		const {notifications, dispatch, onClickNotification,
+			className, ...props} = this.props;
 		const notificationsCount = notifications ? notifications.length : 0;
 		return(
-			<div className="streamline message-nicescroll-bar">
+			<div {...props} className={`streamline message-nicescroll-bar ${className ? className : ""}`}>
 				{notifications.map((notification, index)=>(
 					<div>
 					<Notification

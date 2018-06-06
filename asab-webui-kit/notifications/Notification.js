@@ -15,12 +15,12 @@ class Notification extends React.Component {
 		};
 	}
 	render() {
-		const {notification} = this.props;
+		const {notification, className, ...props} = this.props;
 		const {heading, text, time, level} = notification;
 		const iconBgClass = notification.iconBgClass ? notification.iconBgClass : this.levelToBgClassMap[level];
 		const headingClass = notification.headingClass ? notification.headingClass : this.levelToHeadingClassMap[level];
 		return(
-			<div className="sl-item">
+			<div {...props} className={`sl-item ${className ? className : ""}`}>
 				<a href="javascript:void(0)">
 					{notification.avatarSrc ? (
 						<div className='sl-avatar'>

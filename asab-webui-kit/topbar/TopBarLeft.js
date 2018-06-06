@@ -2,9 +2,10 @@ import React, { Component } from 'react';
 
 class TopBarLeft extends Component {
 	render() {
+		const { children, className, ...props } = this.props;
 		return (
-			<div className="mobile-only-brand pull-left">
-				{this.props.children}
+			<div {...props} className={`mobile-only-brand pull-left ${className ? className : ""}`}>
+				{children}
 			</div>
 		);
 	}

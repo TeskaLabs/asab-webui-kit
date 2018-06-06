@@ -8,9 +8,10 @@ class TopBarDropdown extends Component {
 
 	render() {
 		const { iconClass, iconBadgeText, children,
-			dropdownClass, menuClass, effectIn, effectOut } = this.props;
+			dropdownClass, menuClass, effectIn, effectOut,
+			className, ...props } = this.props;
 		return (
-			<ul className="nav navbar-right top-nav pull-right">
+			<ul {...props} className={`nav navbar-right top-nav pull-right ${className ? className : ""}`}>
 				<li className={`dropdown ${dropdownClass}`}>
 					<a href="#" className="dropdown-toggle" data-toggle="dropdown">
 						<i className={`zmdi ${iconClass} top-nav-icon`}></i>
