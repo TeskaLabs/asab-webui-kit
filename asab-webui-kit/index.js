@@ -41,6 +41,11 @@ import {
 	SideBarHeader,
 } from './sidebar';
 import {
+	RightBar,
+	RightBarList,
+	RightBarItem,
+} from './rightbar';
+import {
 	Notification,
 	NotificationList,
 	redux as notificationsRedux,
@@ -81,6 +86,10 @@ export {
 	SideBarItemLink,
 	SideBarLink,
 	SideBarHeader,
+
+	RightBar,
+	RightBarList,
+	RightBarItem,
 
 	PageWrapper,
     HeadingRow,
