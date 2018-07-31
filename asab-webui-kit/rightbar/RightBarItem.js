@@ -13,7 +13,7 @@ class RightBarItem extends Component {
 					</span>
 				</div>
 				<div className={`status ${status ? status : ""}`}></div>
-				<div class="clearfix"></div>
+				<div className="clearfix"></div>
 			</div>
 		);
 	}
