@@ -65,6 +65,11 @@ import {
 
 } from './philbert'
 
+import {
+	
+	Duration
+
+} from './utils'
 
 export {
 	Container,
@@ -113,5 +118,7 @@ export {
 	DropdownItem,
 
 	HeadingTitle,
-	FooterContainer
+	FooterContainer,
+	
+	Duration
 }
